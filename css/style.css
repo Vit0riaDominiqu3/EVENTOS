@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff
+}
+
+/*background: #151320*/
+
+#div-2{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    background: #151320;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font: bold 2em 'Century Gothic';
+    text-transform: uppercase;
+}
+
+#div-2::before, #div-2::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimaBorda 8s Linear   infinite;
+}
+
+@keyframes AnimaBorda{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+
+#div-2::after{
+    filter: blur(50px);
+}
+
+/* EVENTO */
+.button {
+    background-color: #201d30;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    position: absolute;
+    top: 90%;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 #0000003d,0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+#figura{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+
+#img20{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+#img30{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+#img40{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+
+/* TEXTOS */
+
+#titulo{
+    position: absolute;
+    top: 3%;
+    font-family: cursive;
+    font-size:50px;
+
+}
+
+#texplica{
+    position: absolute;
+    top: 13%;
+    font-size: 20px;
+}
+
+#textoA{
+    position:absolute;
+    top: 35%;
+    left: 77%;
+    font-size: 20px;
+}
+
+#textoB{
+    position:absolute;
+    top: 35%;
+    left: 7%;
+    font-size: 20px;
+}
+
+/*ALTERAR IMAGENS*/
+
+#img2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 75%;
+    top:49%
+}
+
+#img3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 82%;
+    top: 49%;
+}
+
+#img4{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 89%;
+    top: 49%;
+}
+
+#amarelo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 19%;
+    top: 49%;
+    background-color: #642F05;
+}
+
+#vermelho{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 12%;
+    top: 49%;
+    background-color: #5E040A;
+}
+
+#verde{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 5%;
+    top: 49%;
+    background-color: #39972f;
+}

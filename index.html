@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    
+</head>
+<body>   
+
+    <h1 id="titulo"><i>EVENTOS</i></h1>
+    <i id="texplica">Mova o mouse para dentro da área <br> do quadrado e descubra a imagem</i>
+
+    <div id="div-1"></div>
+    <button class="button button2" onclick="minhaFuncao()">Adcionar fundo</button>
+
+
+    <div id="div-2" onmouseover="trocar()">
+        <p>Bem vindo de Volta!</p>
+        <img id="figura">
+        <img  id="img20">
+        <img  id="img30">
+        <img  id="img40">
+    </div>
+    
+    <div id="cont"></div>
+
+    <div>  
+        <img src="image/img2.jpg" ondblclick="trocaImg2()" id="img2">
+        <img src="image/img3.jpg"  ondblclick="trocaImg3()" id="img3" >
+        <img src="image/img-4.jpg" ondblclick="trocaImg4()" id="img4" >
+
+        <i id="textoA">Utilize o duplo clique para alterar<br>a imagem que deseja colocar!</i>
+        <i id="textoB">pressione alguma tecla para<br>ativar  a cor de fundo desejada!</i>
+        
+        <button id="amarelo" onkeydown="cores()"></button>
+        <button id="vermelho" onkeydown="cores2()"></button>
+        <button id="verde"  onkeydown="cores3()"></button>
+    </div>
+
+    
+    <script src="js/script.js"></script>          
+</body>
+</html>
