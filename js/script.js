@@ -3,7 +3,8 @@ function minhaFuncao() {
     document.body.style.backgroundColor='#151320';
     document.getElementById("titulo").style.color="#fff";
     document.getElementById("texplica").style.color="#fff";
-    document.getElementById("textotroca").style.color="#fff";
+    document.getElementById("textoA").style.color="#fff";
+    document.getElementById("textoB").style.color="#fff";
 }
 
 
